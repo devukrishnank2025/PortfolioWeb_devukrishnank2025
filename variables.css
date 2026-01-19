@@ -1,0 +1,30 @@
+:root {
+    /* Colors */
+    --bg-color: #0b0d10;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    /* Glass effect base */
+    --text-main: #e0e0e0;
+    --text-secondary: #a0a0a0;
+
+    /* Accents */
+    /* Accents */
+    --accent-blue: #00f2ff;
+    --accent-cyan: #00c3ff;
+    --accent-purple: #4d4dff;
+
+    --gradient-main: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+    --gradient-text: linear-gradient(90deg, #00f2ff, #4d4dff);
+
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+    --glass-backdrop: blur(10px);
+
+    /* Typography */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-smooth: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Devukrishnan</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <!-- Text Logo instead of Image for better quality control, or keep image if preferred. 
+                     Using text here for the modern 'glow' feel if image is low res. 
+                     Sticking to image as per user constraints "WITHOUT changing core content... unless enhancing".
+                     I will wrap it to style it or just keep as is. -->
+                <a href="#" class="logo"><span>Devu</span>krishnan<span class="dot">.</span></a>
+                <ul id="sidebar">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i onclick="closemenu()" class="fas fa-times"></i>
+                </ul>
+                <i onclick="openmenu()" class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text reveal-section">
+                <p class="subtitle">Web Developer | AI Enthusiast</p>
+                <h1>Hi, I'm <span class="gradient-text">Devukrishnan</span><br>from India</h1>
+                <div class="header-btns">
+                    <a href="#portfolio" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ABOUT -->
+    <div id="about" class="reveal-section">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="about-img-wrapper">
+                        <img src="./images/De.k.jpg" alt="User Image">
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="description">
+                        I am a BCA student and a passionate <span class="highlight">MERN stack web developer</span>.
+                        I enjoy building real-world applications, learning modern technologies, and
+                        exploring <span class="highlight">Artificial Intelligence</span> and Machine Learning.
+                        My long-term goal is to become an excellent software engineer and create impactful AI-driven
+                        solutions.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>MERN Stack (MongoDB, Express, React, Node.js)</li>
+                            <li><span>Programming</span><br>JavaScript, Python, Data Structures</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025 - Present</span><br>Building personal and academic web projects using MERN
+                                stack.</li>
+                            <li><span>2024 - 2025</span><br>Practiced responsive UI design and backend integration.</li>
+                            <li><span>Learning Phase</span><br>Improving problem-solving and coding consistency.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BCA (Computer Science)</span><br>Programming, Databases, Software Engineering.
+                            </li>
+                            <li><span>Self-Learning</span><br>Web development, AI concepts, Real-world coding.</li>
+                            <li><span>Future Goal</span><br>Advanced AI, Deep Learning, System-level development.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICES -->
+    <div id="service" class="reveal-section">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div class="service-card">
+                    <i class="fa-brands fa-wordpress"></i>
+                    <h2>Web Development</h2>
+                    <p>I build responsive, fast, and scalable websites using modern web technologies with clean UI and
+                        solid backend logic.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <h2>Frontend UI</h2>
+                    <p>I create user-friendly interfaces with a focus on usability, performance, and modern design
+                        principles.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Backend & APIs</h2>
+                    <p>I develop REST APIs, manage databases, and handle server-side logic using Node.js and MongoDB.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EXPERTISE -->
+    <div id="expertise" class="reveal-section">
+        <div class="container">
+            <h1 class="sub-title">My Expertise</h1>
+            <div class="expertise-list">
+                <!-- Bootstrap -->
+                <a href="https://getbootstrap.com/" target="_blank" class="expertise-card">
+                    <i class="devicon-bootstrap-plain colored"></i>
+                    <h3>Bootstrap</h3>
+                </a>
+                <!-- CSS3 -->
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="expertise-card">
+                    <i class="devicon-css3-plain colored"></i>
+                    <h3>CSS3</h3>
+                </a>
+                <!-- Express.js -->
+                <a href="https://expressjs.com/" target="_blank" class="expertise-card">
+                    <i class="devicon-express-original"></i>
+                    <h3>Express.js</h3>
+                </a>
+                <!-- Figma -->
+                <a href="https://www.figma.com/" target="_blank" class="expertise-card">
+                    <i class="devicon-figma-plain colored"></i>
+                    <h3>Figma</h3>
+                </a>
+                <!-- Git -->
+                <a href="https://git-scm.com/" target="_blank" class="expertise-card">
+                    <i class="devicon-git-plain colored"></i>
+                    <h3>Git</h3>
+                </a>
+                <!-- GraphQL -->
+                <a href="https://graphql.org/" target="_blank" class="expertise-card">
+                    <i class="devicon-graphql-plain colored"></i>
+                    <h3>GraphQL</h3>
+                </a>
+                <!-- HTML5 -->
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="expertise-card">
+                    <i class="devicon-html5-plain colored"></i>
+                    <h3>HTML5</h3>
+                </a>
+                <!-- JavaScript -->
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                    class="expertise-card">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <h3>JavaScript</h3>
+                </a>
+                <!-- MongoDB -->
+                <a href="https://www.mongodb.com/" target="_blank" class="expertise-card">
+                    <i class="devicon-mongodb-plain colored"></i>
+                    <h3>MongoDB</h3>
+                </a>
+                <!-- Next.js -->
+                <a href="https://nextjs.org/" target="_blank" class="expertise-card">
+                    <i class="devicon-nextjs-plain"></i>
+                    <h3>Next.js</h3>
+                </a>
+                <!-- Node.js -->
+                <a href="https://nodejs.org/" target="_blank" class="expertise-card">
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <h3>Node.js</h3>
+                </a>
+                <!-- Postman -->
+                <a href="https://www.postman.com/" target="_blank" class="expertise-card">
+                    <i class="devicon-postman-plain colored"></i>
+                    <h3>Postman</h3>
+                </a>
+                <!-- React -->
+                <a href="https://react.dev/" target="_blank" class="expertise-card">
+                    <i class="devicon-react-original colored"></i>
+                    <h3>React</h3>
+                </a>
+                <!-- Redux -->
+                <a href="https://redux.js.org/" target="_blank" class="expertise-card">
+                    <i class="devicon-redux-original colored"></i>
+                    <h3>Redux</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- GITHUB STATS -->
+    <div id="github-stats" class="reveal-section">
+        <div class="container">
+            <h1 class="sub-title">GitHub Stats</h1>
+            <div class="github-container">
+                <div class="github-card">
+                    <img src="https://github-readme-stats.vercel.app/api?username=devukrishnank2025&show_icons=true&locale=en&theme=transparent&hide_border=true&title_color=00f2ff&text_color=e0e0e0&icon_color=4d4dff"
+                        alt="GitHub Stats">
+                </div>
+                <div class="github-card">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=devukrishnank2025&theme=transparent&hide_border=true&currStreakLabel=00f2ff&sideNums=e0e0e0&sideLabels=e0e0e0&fire=4d4dff"
+                        alt="GitHub Streak">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PORTFOLIO -->
+    <div id="portfolio" class="reveal-section">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <!-- Project 1 -->
+                <div class="work">
+                    <img src="./images/work-1.png" alt="Project 1">
+                    <div class="layer">
+                        <h3>Web Applications</h3>
+                        <p>Full-stack web apps with authentication, database integration, and clean UI.</p>
+                        <div class="tech-stack">
+                            <span>React</span><span>Node</span><span>MongoDB</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="#" target="_blank" title="Live Demo"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="#" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="work">
+                    <img src="./images/work-2.png" alt="Project 2">
+                    <div class="layer">
+                        <h3>Learning Projects</h3>
+                        <p>Projects built while learning MERN stack, APIs, and system design basics.</p>
+                        <div class="tech-stack">
+                            <span>MERN</span><span>API</span><span>UI/UX</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="#" target="_blank" title="Live Demo"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="#" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="work">
+                    <img src="./images/work-3.png" alt="Project 3">
+                    <div class="layer">
+                        <h3>Future AI Projects</h3>
+                        <p>Planned projects combining AI, NLP, and computer vision concepts.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>TensorFlow</span><span>NLP</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="#" target="_blank" title="Live Demo"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="#" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-outline" href="#">See more</a>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div id="contact" class="reveal-section">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> devukrishnank2025@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 7736816334</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/devukrishnank2025" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mrdevukrishnank2025" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="./images/my-cv.pdf" class="btn btn-primary" download>Download CV</a>
+                        <a href="https://wa.me/917736816334" target="_blank" class="btn btn-secondary"><i
+                                class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <p>© Devukrishnan. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3>Thank You!</h3>
+            <p>Your message has been sent successfully. I will get back to you soon!</p>
+            <button class="modal-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
