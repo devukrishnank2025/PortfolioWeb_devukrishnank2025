@@ -23,7 +23,7 @@ header {
     min-height: 100vh;
     background-image:
         linear-gradient(rgba(11, 13, 16, 0.8), rgba(11, 13, 16, 0.9)),
-        url(./images/background.png);
+        url(/images/background.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -69,7 +69,7 @@ nav {
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 19px;
 }
 
 nav ul li a {
@@ -753,7 +753,7 @@ form .btn {
     header {
         background-image:
             linear-gradient(rgba(11, 13, 16, 0.8), rgba(11, 13, 16, 0.9)),
-            url(./images/phone-background.png);
+            url(/images/phone-background.png);
         background-position: center;
         background-size: cover;
     }

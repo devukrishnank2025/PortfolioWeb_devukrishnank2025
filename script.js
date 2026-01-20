@@ -21,7 +21,7 @@ function openmenu() {
     sidebar.style.right = "0";
 }
 function closemenu() {
-    sidebar.style.right = "-200px";
+    sidebar.style.right = "-250px";
 }
 /* -----------------------------------
    Contact Form Submission (Google Sheets)
