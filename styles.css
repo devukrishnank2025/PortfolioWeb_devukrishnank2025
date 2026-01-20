@@ -122,6 +122,14 @@ nav .fas {
     text-transform: uppercase;
 }
 
+
+.music-btn {
+
+    cursor: pointer;
+}
+
+
+
 .header-text h1 {
     font-family: var(--font-heading);
     font-size: 70px;
@@ -936,6 +944,7 @@ form .btn {
 .modal-btn:hover {
     transform: scale(1.05);
 }
+
 /* iOS Safari Fix */
 @supports (-webkit-touch-callout: none) {
     header {

@@ -125,3 +125,22 @@ function spawnParticle(section, particles) {
 
 // Initialize particles
 createParticles();
+
+const audio = document.getElementById("bg-audio");
+const musicBtn = document.querySelector(".music-btn");
+
+let isPlaying = false;
+
+musicBtn.addEventListener("click", () => {
+    if (!isPlaying) {
+        audio.play().catch(err => console.log(err));
+        isPlaying = true;
+        musicBtn.classList.add("playing");
+    } else {
+        audio.pause();
+        isPlaying = false;
+        musicBtn.classList.remove("playing");
+    }
+});
+
+
