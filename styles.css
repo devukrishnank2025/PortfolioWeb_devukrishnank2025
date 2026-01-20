@@ -936,3 +936,9 @@ form .btn {
 .modal-btn:hover {
     transform: scale(1.05);
 }
+/* iOS Safari Fix */
+@supports (-webkit-touch-callout: none) {
+    header {
+        background-attachment: scroll;
+    }
+}
